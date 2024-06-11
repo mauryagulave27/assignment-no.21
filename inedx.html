@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+    <title>Reciept</title>
+    <style>
+    body{
+        background-color: rgb(164, 161, 158);
+    }
+
+    .reciept-container{
+        width: 80%;
+        border: 1px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-shadow:gray;
+    }
+    .brand-logo{
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .brand-title{
+        text-align: center;
+    }
+    .brand-address{
+        text-align: right;
+    }
+    .brand-mnumber{
+        text-align: right;
+    }
+    .reciept-title{
+        text-align: center;
+        font-size: 30px;
+        margin:20 0px; 
+    }
+    .reciept-body{
+        position: relative;
+        border-bottom: 1px dashed gray;
+
+    }
+    .receipt-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+
+        .receipt-details {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .receipt-key {
+            color: gray;
+            width: 30%;
+        }
+
+        .receipt-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+        
+          .stamp{
+            width: 150px;
+            position: absolute;
+            right: 0;
+            bottom: 18px;
+}
+.signature{
+            text-align: end;
+            margin-top: 170px;
+            font-size: 20px;
+        }
+.reciept-footer {
+            text-align: center;
+            background-color: #e3abca;
+            padding: 10px 0;
+        }
+        
+        /* Small Devices  */
+        @media screen and (max-width: 600px) {
+            .receipt-details {
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .receipt-key {
+                margin: 10px;
+            }
+        }
+        /* Normal Devices  */
+        @media screen and (min-width: 601px) and (max-width: 768px) {
+            .receipt-details {
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .receipt-key {
+                margin: 10px;
+            }
+        }
+        
+       
+
+        /* Tablets Devices  */
+        @media screen and (min-width: 769px) and (max-width: 992px) {}
+
+        
+    /* Large Devices  */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            .receipt-details {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .receipt-key {
+            color: gray;
+            width: 30%;
+        }
+
+        .receipt-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+        
+        }
+    </style>
+    <body>
+        <div class="reciept-container">
+           
+            <div class= "reciept-header">
+                <img src="./zudio.png" class="brand-logo"/>
+                <h2 class="brand-title">Tata Zudio</h2>
+                <p class="brand-address">Bhigwan Road Industrial area Village Rular,<br>Pencil chowk,<br>MIDC, Baramati,<br>  Maharashtra 413133</p>
+            <p class="brand-mnumber">+91- 073045 43871</p>
+            </div>
+            <hr>
+          
+            <div class= "reciept-body">
+                <h3 class="receipt-title">Payment Receipt</h3>
+                <div class="receipt-details">
+
+                    <div class="receipt-key">Receipt No.:</div>
+                    <div class="receipt-value">41654641</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Payment Date:</div>
+                    <div class="receipt-value">11 june 2024</div>
+    
+                </div>
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Total items:</div>
+                    <div class="receipt-value">3</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+    
+                    <div class="receipt-key">Amount:</div>
+                    <div class="receipt-value">5000/-</div>
+    
+                </div>
+    
+                <div class="receipt-details">
+                    <div class="receipt-key">Payment Mode:</div>
+                    <div class="receipt-value">Cash</div>
+    
+                </div>
+            <img src="./images.png" class="stamp"/>
+            <p class="signature">Acountant Signature</p>
+            </div>
+            <div class= "reciept-footer">
+                <p>Thank you for visiting Zudio</p>
+</div>
+        </div>
+    </body>
+</html>
